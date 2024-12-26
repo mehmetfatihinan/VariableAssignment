@@ -6,17 +6,10 @@ namespace VariableUsage
     {
         static void Main(string[] args)
         {
-            // Get all user information
             User user = GetUserInformation();
-
-            // Get prices of items
             double[] itemPrices = GetItemPrices();
-
-            // Calculate total price and discount
             double totalPrice = CalculateTotalPrice(itemPrices);
             double discount = CalculateDiscount(totalPrice);
-
-            // Display the result
             DisplaySummary(user, totalPrice, discount);
         }
 
